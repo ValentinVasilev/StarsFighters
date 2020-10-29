@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "StarsFighters.Controllers/1.0.0": {
+        "runtime": {
+          "StarsFighters.Controllers.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StarsFighters.Controllers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

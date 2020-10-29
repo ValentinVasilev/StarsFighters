@@ -1,0 +1,9 @@
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\bin\Debug\netcoreapp3.1\StarsFighters.Controllers.deps.json
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\bin\Debug\netcoreapp3.1\StarsFighters.Controllers.dll
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\obj\Debug\netcoreapp3.1\StarsFighters.Controllers.csprojAssemblyReference.cache
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\obj\Debug\netcoreapp3.1\StarsFighters.Controllers.AssemblyInfoInputs.cache
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\obj\Debug\netcoreapp3.1\StarsFighters.Controllers.AssemblyInfo.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\bin\Debug\netcoreapp3.1\StarsFighters.Controllers.pdb
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\obj\Debug\netcoreapp3.1\StarsFighters.Controllers.csproj.CoreCompileInputs.cache
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\obj\Debug\netcoreapp3.1\StarsFighters.Controllers.dll
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\obj\Debug\netcoreapp3.1\StarsFighters.Controllers.pdb
