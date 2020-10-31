@@ -9,9 +9,7 @@
       "StarsFighters.Data/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.9",
-          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.9",
-          "StarsFighters.Controllers": "1.0.0",
-          "StarsFighters.Services": "1.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.9"
         },
         "runtime": {
           "StarsFighters.Data.dll": {}
@@ -933,6 +931,12 @@
       "System.Security.Permissions/4.5.0": {
         "dependencies": {
           "System.Security.AccessControl": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Security.Permissions.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.6.26515.6"
+          }
         }
       },
       "System.Security.Principal.Windows/4.5.0": {
@@ -1066,16 +1070,6 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XmlDocument": "4.3.0"
-        }
-      },
-      "StarsFighters.Controllers/1.0.0": {
-        "runtime": {
-          "StarsFighters.Controllers.dll": {}
-        }
-      },
-      "StarsFighters.Services/1.0.0": {
-        "runtime": {
-          "StarsFighters.Services.dll": {}
         }
       }
     }
@@ -1806,16 +1800,6 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
-    },
-    "StarsFighters.Controllers/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "StarsFighters.Services/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

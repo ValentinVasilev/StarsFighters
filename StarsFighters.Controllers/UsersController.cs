@@ -13,12 +13,9 @@ namespace StarsFighters.Controllers
             this.userService = userService;
         }
 
-        public HttpResponse Login()
+        public IActionResult Login()
         {
             return this.View();
         }
-
-
-
     }
 }
