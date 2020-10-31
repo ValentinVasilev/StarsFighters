@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using StarsFighters.Data;
 using StarsFighters.Data.Models;
 using InfraStructure.Data.Enums;
+using StarsFighters.Services.Models;
 
 namespace StarsFighters
 {
@@ -34,13 +35,17 @@ namespace StarsFighters
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IUserService, UserService>();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
