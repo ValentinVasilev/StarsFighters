@@ -11,12 +11,15 @@ namespace StarsFighters.Data.Models
 
         public int BuildingId { get; set; }
 
+        [Required]
         public double BuildingCost { get; set; }
 
+        [Required]
         public string Requirements { get; set; }
 
         public decimal EarnPerHour { get; set; }
 
+        [Required]
         public int CurrentLevel { get; set; }
 
         public bool UpgradeOnGoing { get; set; }

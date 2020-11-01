@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StarsFighters.Data.Models
 {
@@ -6,8 +7,11 @@ namespace StarsFighters.Data.Models
     {
         public int Id { get; set; }
 
+        [Required]
+        [MaxLength(20)]
         public string BuildingName { get; set; }
 
+        
         public string UpgradeTimeFormula { get; set; }
 
         [ForeignKey("BuildingBuild")]

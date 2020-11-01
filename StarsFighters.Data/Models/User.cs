@@ -24,12 +24,14 @@ namespace StarsFighters.Data.Models
         public string Email { get; set; }
 
         [Required]
+        [MaxLength(20)]
         public string Password { get; set; }
 
         public DateTime RegistrationDate { get; set; }
 
         public bool IsDelete { get; set; }
 
+        [Required]
         public string IpAddress { get; set; }
     }
 }

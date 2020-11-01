@@ -8,14 +8,14 @@ namespace StarsFighters.Data.Models
     {
         public int Id { get; set; }
 
-        public double Damage { get; set; }
+        public double? Damage { get; set; }
 
-        public double HealthPoints { get; set; }
+        public double? HealthPoints { get; set; }
 
-        public double HullDamageReduce { get; set; }
+        public double? HullDamageReduce { get; set; }
 
-        public double Shield { get; set; }
+        public double? Shield { get; set; }
 
-        public double Speed { get; set; }
+        public double? Speed { get; set; }
     }
 }

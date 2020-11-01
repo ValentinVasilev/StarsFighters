@@ -9,13 +9,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.9" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\StarsFighters.Controllers\StarsFighters.Controllers.csproj" />
-    <ProjectReference Include="..\StarsFighters.Data\StarsFighters.Data.csproj" />
-    <ProjectReference Include="..\StarsFighters.Services\StarsFighters.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,6 +30,12 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\OtherFiles\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StarsFighters.Controllers\StarsFighters.Controllers.csproj" />
+    <ProjectReference Include="..\StarsFighters.Data\StarsFighters.Data.csproj" />
+    <ProjectReference Include="..\StarsFighters.Services\StarsFighters.Services.csproj" />
   </ItemGroup>
 
 </Project>

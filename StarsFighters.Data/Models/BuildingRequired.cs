@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StarsFighters.Data.Models
 {
@@ -14,7 +15,7 @@ namespace StarsFighters.Data.Models
         [ForeignKey("BuildingRequired")]
         public int BuildingRequiredId { get; set; }
 
-
+        [Required]
         public int Level { get; set; }
     }
 }

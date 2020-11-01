@@ -69,7 +69,6 @@ D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFi
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\StarsFighters.AssemblyInfoInputs.cache
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\StarsFighters.AssemblyInfo.cs
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\StarsFighters.csproj.CoreCompileInputs.cache
-D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\StarsFighters.MvcApplicationPartsAssemblyInfo.cs
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\StarsFighters.MvcApplicationPartsAssemblyInfo.cache
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\StarsFighters.RazorAssemblyInfo.cache
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\StarsFighters.RazorAssemblyInfo.cs
@@ -100,3 +99,5 @@ D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFi
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\favicon.png
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\favicon.ico
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\libman.json
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\StarsFighters.MvcApplicationPartsAssemblyInfo.cs

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace StarsFighters.Data.Models
@@ -11,14 +12,23 @@ namespace StarsFighters.Data.Models
             this.Resources = new HashSet<Resource>();
             this.Achievements = new HashSet<Achievement>();
             this.ItemsType = new HashSet<Item>();
+            this.Quests = new HashSet<Quest>();
         }
 
         public int Id { get; set; }
 
+        [Required]
         public int Level { get; set; }
 
+        [Required]
         public int Experience { get; set; }
 
+        [Required]
+        public int QuestId { get; set; }
+
+        public Quest Quest { get; set; }
+
+        [Required]
         public Ship ShipType { get; set; }
 
         public BuildingBuild Buildings { get; set; }
@@ -30,5 +40,7 @@ namespace StarsFighters.Data.Models
         public ICollection<Item> ItemsType { get; set; }
 
         public ICollection<BuildingBuild> BuildingsType { get; set; }
+
+        public ICollection<Quest> Quests { get; set; }
     }
 }

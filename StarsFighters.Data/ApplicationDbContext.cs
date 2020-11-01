@@ -41,6 +41,10 @@ namespace StarsFighters.Data
 
         public DbSet<BuildingRequired> BuildingRequireds { get; set; }
 
+        public DbSet<Reward> Rewards { get; set; }
+
+        public DbSet<Quest> Quests { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

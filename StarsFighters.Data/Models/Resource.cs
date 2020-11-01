@@ -8,14 +8,14 @@ namespace StarsFighters.Data.Models
     {
         public int Id { get; set; }
 
-        public decimal Minerals { get; set; }
+        public decimal? Minerals { get; set; }
 
-        public decimal Metal { get; set; }
+        public decimal? Metal { get; set; }
 
-        public decimal Gas { get; set; }
+        public decimal? Gas { get; set; }
 
-        public decimal Gold { get; set; }
+        public decimal? Gold { get; set; }
 
-        public int StarsCredits { get; set; }
+        public int? StarsCredits { get; set; }
     }
 }
