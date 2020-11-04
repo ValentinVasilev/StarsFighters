@@ -6,6 +6,7 @@
 <h1>@ViewData["Title"]</h1>
 <link href="//db.onlinewebfonts.com/c/a4e256ed67403c6ad5d43937ed48a77b?family=Core+Sans+N+W01+35+Light" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="/css/Form.css" type="text/css">
+
 <div class="row">
     <div class="col-md-4">
         <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
@@ -43,27 +44,27 @@
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
                     <div>
+                        <b>
+                            - Do not share your Email information to no one <span style="color:red; font-size: 40px">&#9888;</span>
+                        </b>
                         <p>
-                            - Do not share your Email information to no one !!!
+                            <b>- Always use valid Email!</b>
                         </p>
                         <p>
-                            - Always use valid Email!
-                        </p>
-                        <p>
-                        <p>
+                        <b>
                             - Your password must contains:
+                        </b>
+                        <p>
+                            &emsp; &emsp; &emsp; &emsp;- At least one upper letter (A-Z)
                         </p>
                         <p>
-                                         - At least one upper letter (A-Z)
+                            &emsp; &emsp; &emsp; &emsp;- At least one lower letter (a-z)
                         </p>
                         <p>
-                                         - At least one lower letter (a-z)
+                            &emsp; &emsp; &emsp; &emsp;- At least one symbol (~`!@@#$%^&*()_-+={[}]|\:;"'<,>.?/)
                         </p>
                         <p>
-                                         - At least one lower letter (a-z)
-                        </p>
-                        <p>
-                                         - Any number between (0-9)
+                            &emsp; &emsp; &emsp; &emsp;- Any number between (0-9)
                         </p>
                         <p>
                             - In combination with all above and length with no less then 6 symbols, you will be fine !
