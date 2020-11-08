@@ -37,13 +37,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\OtherFiles\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\StarsFighters.Controllers\StarsFighters.Controllers.csproj" />
     <ProjectReference Include="..\StarsFighters.Data\StarsFighters.Data.csproj" />
     <ProjectReference Include="..\StarsFighters.Services\StarsFighters.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\OtherFiles\Pictures\" />
   </ItemGroup>
 
 </Project>
