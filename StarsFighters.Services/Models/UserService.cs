@@ -18,6 +18,7 @@ namespace StarsFighters.Services.Models
         }
         public void CreateUser(string name, string email, string password)
         {
+
             var newUser = new User
             {
                 UserName = name,
@@ -28,10 +29,9 @@ namespace StarsFighters.Services.Models
             this.db.User.Add(newUser);
             this.db.SaveChanges();
         }
-
         public string GetUserId(string name, string password)
         {
-            
+
             var userId = this.db.User.FirstOrDefault(x => x.UserName == name && x.PasswordHash == password);
             return userId?.Id;
         }
@@ -45,6 +45,7 @@ namespace StarsFighters.Services.Models
         {
             return this.db.User.Any(x => x.UserName == username);
         }
+
 
     }
 }
