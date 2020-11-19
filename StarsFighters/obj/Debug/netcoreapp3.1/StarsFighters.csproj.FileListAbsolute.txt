@@ -96,7 +96,6 @@ D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFi
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\StarsFighters.Services.pdb
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\favicon.png
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\favicon.ico
-D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\libman.json
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
@@ -181,3 +180,17 @@ D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFi
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\css\Form.css
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\css\LogIn.css
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\BackGrounds\Space-backGround.jpg
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Resources\Crystals2.png
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Resources\Darkmatter.png
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Resources\Gas.png
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Resources\Gold.png
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Resources\MetalBar.png
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_SharedLayOut.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\TestView.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\StarsFighters.Web.ViewModels.dll
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\StarsFighters.Web.ViewModels.pdb
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Quest\Quest.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\LoggedIn\Achievements.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index-2.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs

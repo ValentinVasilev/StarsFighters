@@ -1077,10 +1077,16 @@
       },
       "StarsFighters.Services/1.0.0": {
         "dependencies": {
-          "StarsFighters.Data": "1.0.0"
+          "StarsFighters.Data": "1.0.0",
+          "StarsFighters.Web.ViewModels": "1.0.0"
         },
         "runtime": {
           "StarsFighters.Services.dll": {}
+        }
+      },
+      "StarsFighters.Web.ViewModels/1.0.0": {
+        "runtime": {
+          "StarsFighters.Web.ViewModels.dll": {}
         }
       }
     }
@@ -1818,6 +1824,11 @@
       "sha512": ""
     },
     "StarsFighters.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StarsFighters.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

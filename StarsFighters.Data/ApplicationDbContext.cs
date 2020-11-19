@@ -23,6 +23,8 @@ namespace StarsFighters.Data
 
         public DbSet<UsersAccounts> UsersAccounts { get; set; }
 
+        public DbSet<Achievement> Achievements { get; set; }
+
         public DbSet<Account> Accounts { get; set; }
 
         public DbSet<Statistic> Statistics { get; set; }

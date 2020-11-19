@@ -12,3 +12,5 @@ D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFi
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\bin\Debug\netcoreapp3.1\StarsFighters.Data.pdb
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\bin\Debug\netcoreapp3.1\StarsFighters.Services.pdb
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\obj\Debug\netcoreapp3.1\StarsFighters.Controllers.csproj.CopyComplete
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\bin\Debug\netcoreapp3.1\StarsFighters.Web.ViewModels.dll
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters.Controllers\bin\Debug\netcoreapp3.1\StarsFighters.Web.ViewModels.pdb

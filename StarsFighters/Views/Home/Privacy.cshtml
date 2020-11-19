@@ -1,6 +1,13 @@
-﻿@{
+﻿@model StarsFighters.Controllers.Models.LoggedInViewModel
+@{
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<p>Our Data base has:</p>
+<ul>
+    <li>Minerals: @Model.Minerals</li>
+    <li>Metal: @Model.Metal</li>
+    <li>Gas: @Model.Gas</li>
+    <li>Gold: @Model.StarsCredits</li>
+</ul>

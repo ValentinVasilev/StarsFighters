@@ -15,12 +15,13 @@ using StarsFighters.Data;
 using StarsFighters.Data.Models;
 using InfraStructure.Data.Enums;
 using StarsFighters.Services.Models;
+using System.IO;
 
 namespace StarsFighters
 {
     public class Startup
     {
-       
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -45,7 +46,7 @@ namespace StarsFighters
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -66,7 +67,7 @@ namespace StarsFighters
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -76,7 +77,10 @@ namespace StarsFighters
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
+
             });
+
+            
         }
 
     }

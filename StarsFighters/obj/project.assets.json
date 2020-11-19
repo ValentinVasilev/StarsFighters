@@ -2746,13 +2746,24 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "StarsFighters.Data": "1.0.0"
+          "StarsFighters.Data": "1.0.0",
+          "StarsFighters.Web.ViewModels": "1.0.0"
         },
         "compile": {
           "bin/placeholder/StarsFighters.Services.dll": {}
         },
         "runtime": {
           "bin/placeholder/StarsFighters.Services.dll": {}
+        }
+      },
+      "StarsFighters.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/StarsFighters.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StarsFighters.Web.ViewModels.dll": {}
         }
       }
     }
@@ -8851,6 +8862,11 @@
       "type": "project",
       "path": "../StarsFighters.Services/StarsFighters.Services.csproj",
       "msbuildProject": "../StarsFighters.Services/StarsFighters.Services.csproj"
+    },
+    "StarsFighters.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../StarsFighters.Web.ViewModels/StarsFighters.Web.ViewModels.csproj",
+      "msbuildProject": "../StarsFighters.Web.ViewModels/StarsFighters.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

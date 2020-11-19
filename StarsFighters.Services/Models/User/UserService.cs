@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Internal;
 using StarsFighters.Data;
 using StarsFighters.Data.Models;
+using StarsFighters.Services.Models;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;

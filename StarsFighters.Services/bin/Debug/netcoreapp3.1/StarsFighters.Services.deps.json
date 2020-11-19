@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "StarsFighters.Services/1.0.0": {
         "dependencies": {
-          "StarsFighters.Data": "1.0.0"
+          "StarsFighters.Data": "1.0.0",
+          "StarsFighters.Web.ViewModels": "1.0.0"
         },
         "runtime": {
           "StarsFighters.Services.dll": {}
@@ -1079,6 +1080,11 @@
         "runtime": {
           "StarsFighters.Data.dll": {}
         }
+      },
+      "StarsFighters.Web.ViewModels/1.0.0": {
+        "runtime": {
+          "StarsFighters.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -1810,6 +1816,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "StarsFighters.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StarsFighters.Web.ViewModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

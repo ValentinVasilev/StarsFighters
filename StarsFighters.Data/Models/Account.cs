@@ -26,7 +26,7 @@ namespace StarsFighters.Data.Models
         [Required]
         public int QuestId { get; set; }
 
-        public Quest Quest { get; set; }
+        //public Quest Quest { get; set; }
 
         [Required]
         public Ship ShipType { get; set; }

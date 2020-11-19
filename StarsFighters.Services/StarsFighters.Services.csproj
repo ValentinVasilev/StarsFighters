@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Models\Items\" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\StarsFighters.Data\StarsFighters.Data.csproj" />
+    <ProjectReference Include="..\StarsFighters.Web.ViewModels\StarsFighters.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1543,6 +1543,16 @@
         "runtime": {
           "bin/placeholder/StarsFighters.Data.dll": {}
         }
+      },
+      "StarsFighters.Web.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/StarsFighters.Web.ViewModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StarsFighters.Web.ViewModels.dll": {}
+        }
       }
     }
   },
@@ -5789,11 +5799,17 @@
       "type": "project",
       "path": "../StarsFighters.Data/StarsFighters.Data.csproj",
       "msbuildProject": "../StarsFighters.Data/StarsFighters.Data.csproj"
+    },
+    "StarsFighters.Web.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../StarsFighters.Web.ViewModels/StarsFighters.Web.ViewModels.csproj",
+      "msbuildProject": "../StarsFighters.Web.ViewModels/StarsFighters.Web.ViewModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "StarsFighters.Data >= 1.0.0"
+      "StarsFighters.Data >= 1.0.0",
+      "StarsFighters.Web.ViewModels >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5828,6 +5844,9 @@
           "projectReferences": {
             "D:\\Важни\\1.WEB DEVELOPMENT\\0.Stars Fighters - Project\\StarsFighters\\StarsFighters.Data\\StarsFighters.Data.csproj": {
               "projectPath": "D:\\Важни\\1.WEB DEVELOPMENT\\0.Stars Fighters - Project\\StarsFighters\\StarsFighters.Data\\StarsFighters.Data.csproj"
+            },
+            "D:\\Важни\\1.WEB DEVELOPMENT\\0.Stars Fighters - Project\\StarsFighters\\StarsFighters.Web.ViewModels\\StarsFighters.Web.ViewModels.csproj": {
+              "projectPath": "D:\\Важни\\1.WEB DEVELOPMENT\\0.Stars Fighters - Project\\StarsFighters\\StarsFighters.Web.ViewModels\\StarsFighters.Web.ViewModels.csproj"
             }
           }
         }
