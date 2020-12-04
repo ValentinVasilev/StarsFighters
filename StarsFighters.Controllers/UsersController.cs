@@ -1,24 +1,26 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using StarsFighters.Data;
-using StarsFighters.Services.Models;
+
 using System.Linq;
 using System.Threading.Tasks;
-
+using StarsFighters.Services.Models.Account;
+using StarsFighters.Services.Models;
 
 namespace StarsFighters.Controllers
 {
     public class UsersController : Controller
     {
         private readonly IUserService userService;
+        private readonly IAccountService accountService;
         private readonly ApplicationDbContext db;
 
-        public UsersController(IUserService userService, ApplicationDbContext db)
+        public UsersController(IUserService userService, IAccountService accountService, ApplicationDbContext db)
         {
             this.userService = userService;
+            this.accountService = accountService;
             this.db = db;
         }
-
 
         //public async Task<IActionResult> Register()
         //{

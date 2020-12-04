@@ -37,6 +37,15 @@
     <Content Update="wwwroot\OtherFiles\Pictures\BackGrounds\Space-backGround.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\OtherFiles\Pictures\Buildings\Crystal Station.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\OtherFiles\Pictures\Buildings\Gas Station.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\OtherFiles\Pictures\Buildings\Metal Station.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\OtherFiles\Pictures\Resources\Crystals2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -58,6 +67,10 @@
     <ProjectReference Include="..\StarsFighters.Controllers\StarsFighters.Controllers.csproj" />
     <ProjectReference Include="..\StarsFighters.Data\StarsFighters.Data.csproj" />
     <ProjectReference Include="..\StarsFighters.Services\StarsFighters.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Ship\" />
   </ItemGroup>
 
 </Project>

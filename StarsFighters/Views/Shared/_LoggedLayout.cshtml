@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @*<link rel="stylesheet" href="~/css/bootstrap.css"/>*@
+    <link rel="stylesheet" href="/css/_LoggedLayout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>StarsFighters</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="navbar">
+                <div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @*<a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">Sign out</a>*@
+                        <a class="nav-link text-dark" asp-area="Identity" asp-controller="Account" asp-action="Logout"><i class="fa fa-fw fa-user"></i> Logout</a>
+                        @*<form method="post" asp-area="Identity" asp-controller="Account" aspcontroller="Logout">
+                    <input type="submit" value="Logout" />
+                </form>*@
+
+                    }
+
+                    <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+                    <a href="#"><i class="fa fa-fw fa-trophy"></i> Achievements</a>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+
+                </div>
+                <div class="progress md-progress" style="height: 20px">
+                    <div class="progress-bar" role="progressbar" style="width: 25%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+</header>
+
+        <div class="sidenav">
+            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Home"><i class="fa fa-globe" aria-hidden="true"></i> Home</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+            <button class="dropdown-btn">Buildings<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Buildings" asp-action="Buildings">Upgrades</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Buildings" asp-action="Information">Information</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Buildings" asp-action="Research">Research</a>
+            </div>
+            <button class="dropdown-btn">Ship<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="#">Upgrades</a>
+                <a href="#">Items</a>
+                <a href="#">Research</a>
+            </div>
+            <a href="#contact">Search</a>
+        </div>
+
+        <main class="main">
+            <h1></h1>
+            <div class="main-header">
+                <div class="main-header__heading">Metal</div>
+                <span>
+                    <img src="/OtherFiles/Pictures/Resources/MetalBar.png" width="50" height="50" style="position:fixed;left:265px;bottom:785px;z-index:999">
+                </span>
+                <div class="main-header__heading">Crystals</div>
+                <span>
+                    <img src="/OtherFiles/Pictures/Resources/Crystals2.png" width="50" height="50" style="position:fixed;left:530px;bottom:785px;z-index:999">
+                </span>
+                <div class="main-header__updates">Gas</div>
+                <span>
+                    <img src="/OtherFiles//Pictures//Resources/Gas.png" width="50" height="50" style="position:fixed;left:800px;bottom:785px;z-index:999">
+                </span>
+                <div class="main-header__updates">Gold</div>
+                <span>
+                    <img src="/OtherFiles/Pictures/Resources/Gold.png" width="50" height="50" style="position:fixed;left:1050px;bottom:785px;z-index:999">
+                </span>
+                <div class="main-header__updates">DarkMatter</div>
+                <span>
+                    <img src="/OtherFiles/Pictures/Resources/Darkmatter.png" width="50" height="50" style="position:fixed;left:1290px;bottom:785px;z-index:999">
+                </span>
+             
+            </div>
+
+            <hr color="#33D7FF">
+            <div class="main-cards">
+                @RenderBody()
+            </div>
+        </main>
+
+
+        <footer class="footer">
+        </footer>
+    </div>
+
+</body>
+</html>
+<script>
+    //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+</script>

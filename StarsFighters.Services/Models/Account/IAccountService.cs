@@ -5,9 +5,10 @@ namespace StarsFighters.Services.Models.Account
 {
     public interface IAccountService
     {
-        //void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes);
+        void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes);
 
-        void CreateInitialAccountStatus(Resource resource);
+        decimal CreateInitialAccountResources(Resource resource);
+
         void CreateInitialBuildingsStatus(BuildingTypes buildingTypes, int buildingCurrentLevel, decimal buildingCurrentIncome);
 
         void ResourcesOnInitialCreate(string username, string email);

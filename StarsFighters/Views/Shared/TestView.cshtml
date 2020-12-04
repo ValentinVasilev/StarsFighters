@@ -1,0 +1,99 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using StarsFighters.Controllers
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@*@model StarsFighters.Controllers.Models.LoggedInViewModel*@
+@model StarsFighters.Data.Models.Resource
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/_LayOut.css">
+    @*<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">*@
+    <title>StarsFighters</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="navbar">
+                <a href="#"><i class="fa fa-fw fa-user"></i> Logout</a>
+                <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+                <a href="#"><i class="fa fa-fw fa-search"></i> Achievements</a>
+                <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+
+            </div>
+        </header>
+
+        <div class="sidenav">
+            <a class="active" href="#"><i class="fa fa-globe" aria-hidden="true"></i> Home</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+            <button class="dropdown-btn">Buildings<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="#">Upgrades</a>
+                <a href="#">Income</a>
+                <a href="#">Research</a>
+            </div>
+            <button class="dropdown-btn">Ship<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="#">Upgrades</a>
+                <a href="#">Items</a>
+                <a href="#">Upgrades</a>
+            </div>
+            <a href="#contact">Search</a>
+        </div>
+
+        <main class="main">
+            <div class="main-header">
+                <di class="main-header__heading">Metal: @Model.Metal
+            </div>
+            <span>
+                <img src="/OtherFiles/Pictures/Resources/MetalBar.png" width="50" height="50" style="position:fixed;left:265px;bottom:785px;">
+            </span>
+            <div class="main-header__heading">Minerals: @Model.Minerals</div>
+            <span>
+                <img src="/OtherFiles/Pictures/Resources/Crystals2.png" width="50" height="50" style="position:fixed;left:550px;bottom:785px;">
+            </span>
+            <div class="main-header__updates">Gas: @Model.Gas</div>
+            <span>
+                <img src="/OtherFiles/Pictures/Resources/Gas.png" width="50" height="50" style="position:fixed;left:850px;bottom:785px;">
+            </span>
+            <div class="main-header__updates">Gold: @Model.Gold</div>
+            <span>
+                <img src="/OtherFiles/Pictures/Resources/Gold.png" width="50" height="50" style="position:fixed;left:1117px;bottom:785px;">
+            </span>
+            <div class="main-header__updates">DarkMatter: @Model.StarsCredits</div>
+            <span>
+                <img src="/OtherFiles/Pictures/Resources/Darkmatter.png" width="50" height="50" style="position:fixed;left:1380px;bottom:785px;">
+            </span>
+            <hr color="#33D7FF">
+
+
+            <footer class="footer">
+            </footer>
+    </div>
+    <script>
+        //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+

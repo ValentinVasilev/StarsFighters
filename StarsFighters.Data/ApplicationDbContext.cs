@@ -50,7 +50,7 @@ namespace StarsFighters.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.;Database=StarsFighters2;Integrated Security=true");
+            optionsBuilder.UseSqlServer("Server=.;Database=StarsFighters;Integrated Security=true");
 
         }
 

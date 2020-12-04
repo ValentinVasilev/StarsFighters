@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_InnerLayOut.css">
+    <title>StarsFighters</title>
+</head>
+<div class="grid-container">
+    <header class="header">
+        <div class="navbar">
+            <a href="#"><i class="fa fa-fw fa-user"></i> Logout</a>
+            <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+            <a href="#"><i class="fa fa-fw fa-search"></i> Achievements</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+
+        </div>
+    </header>
+    <body>
+        <div class="sidenav">
+            <a class="active" href="#"><i class="fa fa-globe" aria-hidden="true"></i> Home</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+            <button class="dropdown-btn">Buildings<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Buildings" asp-action="Buildings">Upgrades</a>
+                <a href="#">Income</a>
+                <a href="#">Research</a>
+            </div>
+            <button class="dropdown-btn">Ship<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="#">Upgrades</a>
+                <a href="#">Items</a>
+                <a href="#">Upgrades</a>
+            </div>
+            <a href="#contact">Search</a>
+        </div>
+
+        <main class="main">
+            <h1></h1>
+            <div class="main-header">
+                <div class="main-header__heading">Metals</div>
+                <span>
+                    <img src="MetalBar.png" width="50" height="50" style="position:fixed;left:265px;bottom:785px;z-index:999">
+                </span>
+                <div class="main-header__heading">Crystals</div>
+                <span>
+                    <img src="Crystals2.png" width="50" height="50" style="position:fixed;left:530px;bottom:785px;z-index:999">
+                </span>
+                <div class="main-header__updates">Gas</div>
+                <span>
+                    <img src="Gas.png" width="50" height="50" style="position:fixed;left:800px;bottom:785px;z-index:999">
+                </span>
+                <div class="main-header__updates">Gold</div>
+                <span>
+                    <img src="Gold.png" width="50" height="50" style="position:fixed;left:1050px;bottom:785px;z-index:999">
+                </span>
+                <div class="main-header__updates">DarkMatter</div>
+                <span>
+                    <img src="Darkmatter.png" width="50" height="50" style="position:fixed;left:1290px;bottom:785px;z-index:999">
+                </span>
+            </div>
+            <hr color="#33D7FF">
+
+        </main>
+
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </body>
+    <script>
+        //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+</html>

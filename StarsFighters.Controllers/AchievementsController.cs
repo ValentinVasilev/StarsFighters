@@ -6,7 +6,7 @@ namespace StarsFighters.Controllers
     {
         public IActionResult Achievements()
         {
-            return View("/LoggedIn/Achievements");
+            return View();
         }
     }
 }

@@ -8,7 +8,7 @@ namespace StarsFighters.Data.Models
 {
     public class User : IdentityUser
     {
-        public DateTime RegistrationDate { get; set; }
+        public DateTime RegistrationDate => DateTime.UtcNow;
 
         public bool IsDelete { get; set; }
 

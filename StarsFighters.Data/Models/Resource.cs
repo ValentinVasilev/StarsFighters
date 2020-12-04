@@ -16,6 +16,6 @@ namespace StarsFighters.Data.Models
 
         public decimal? Gold { get; set; }
 
-        public int? StarsCredits { get; set; }
+        public decimal? StarsCredits { get; set; }
     }
 }

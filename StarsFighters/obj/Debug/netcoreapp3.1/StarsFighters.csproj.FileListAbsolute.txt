@@ -186,11 +186,22 @@ D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFi
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Resources\Gas.png
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Resources\Gold.png
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Resources\MetalBar.png
-D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_SharedLayOut.cshtml.g.cs
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\TestView.cshtml.g.cs
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\StarsFighters.Web.ViewModels.dll
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\StarsFighters.Web.ViewModels.pdb
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Quest\Quest.cshtml.g.cs
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\LoggedIn\Achievements.cshtml.g.cs
-D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index-2.cshtml.g.cs
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Buildings\Buildings.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\TestView.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_InnerLayout-2.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\UnderConstruction.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\LoggedIn\ShipDeck.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoggedLayout.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Logged.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Buildings\Information.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Buildings\Research.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\Home\Home.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Buildings\Gas Station.jpg
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Buildings\Crystal Station.jpg
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Buildings\Metal Station.jpg

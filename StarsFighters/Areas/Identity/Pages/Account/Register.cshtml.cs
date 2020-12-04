@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
@@ -28,7 +29,7 @@ namespace StarsFighters.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
         private readonly ApplicationDbContext dbContext;
-        
+        private readonly AccountService accountService;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -36,13 +37,14 @@ namespace StarsFighters.Areas.Identity.Pages.Account
             ILogger<RegisterModel> logger,
             IEmailSender emailSender,
             ApplicationDbContext dbContext)
-            
+
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
             this.dbContext = dbContext;
+
         }
 
         [BindProperty]
@@ -88,12 +90,13 @@ namespace StarsFighters.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-               
+
                 var user = new IdentityUser { UserName = Input.Username, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                   
+                    ResourcesOnAccountCreation();
+
                     _logger.LogInformation("User created a new account with password.");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -129,6 +132,25 @@ namespace StarsFighters.Areas.Identity.Pages.Account
             return Page();
         }
 
+        private void ResourcesOnAccountCreation()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            //var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var accountResourcesOnCreations = new Resource
+            {
+                //Id = (int)userId,
+               
+                Metal = 5000,
+                Minerals = 4000,
+                Gas = 3000,
+                Gold = 100,
+                StarsCredits = 0
+            };
+
+            this.dbContext.Resources.Add(accountResourcesOnCreations);
+            this.dbContext.SaveChanges();
+        }
     }
 }
 

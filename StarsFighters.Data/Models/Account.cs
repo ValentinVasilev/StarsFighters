@@ -17,7 +17,11 @@ namespace StarsFighters.Data.Models
 
         public int Id { get; set; }
 
-        [Required]
+        //public string UserId { get; set; }
+        //public ApplicationUser User
+        //[Required]        //public string UserId { get; set; }
+        //public ApplicationUser User
+        //[Required]
         public int Level { get; set; }
 
         [Required]

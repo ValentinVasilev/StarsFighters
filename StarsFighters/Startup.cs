@@ -16,6 +16,7 @@ using StarsFighters.Data.Models;
 using InfraStructure.Data.Enums;
 using StarsFighters.Services.Models;
 using System.IO;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace StarsFighters
 {
@@ -37,11 +38,18 @@ namespace StarsFighters
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IUserService, UserService>();
+            services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+            services.AddDefaultIdentity<IdentityUser>(options =>
+                        {
+                            options.SignIn.RequireConfirmedAccount = false;
+                            options.Password.RequiredLength = 6;
+                            options.Password.RequireNonAlphanumeric = false;
+                        })
+
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
@@ -67,7 +75,7 @@ namespace StarsFighters
             app.UseStaticFiles();
 
             app.UseRouting();
-            
+
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -80,7 +88,7 @@ namespace StarsFighters
 
             });
 
-            
+
         }
 
     }

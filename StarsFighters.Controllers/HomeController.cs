@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.Logging;
 using StarsFighters.Controllers.Models;
 using StarsFighters.Data;
@@ -13,10 +14,15 @@ namespace StarsFighters.Controllers
 
         private readonly ILogger<HomeController> _logger;
         private readonly ApplicationDbContext db;
+        private readonly IActionContextAccessor _accessor;
+        public IActionContextAccessor Accessor { get; }
 
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext db)
+        public HomeController(ILogger<HomeController> logger,
+            ApplicationDbContext db,
+            IActionContextAccessor accessor)
         {
             _logger = logger;
+            Accessor = accessor;
             this.db = db;
         }
 
@@ -24,13 +30,24 @@ namespace StarsFighters.Controllers
 
         public IActionResult Index()
         {
-            //if (User.Identity.IsAuthenticated)
-            //{
-            //    return this.Redirect("/Quest");
-            //}
+            //var userIpAddress = _accessor.ActionContext.HttpContext.Connection.RemoteIpAddress.ToString();
+            //TODO : Save current user Ip to Db
+            if (!User.Identity.IsAuthenticated)
+            {
+                return this.Redirect("/Home/Home");
+            }
             return View();
         }
 
+        public IActionResult Home()
+        {
+            return View("Home");
+        }
+
+        public IActionResult UnderConstruction()
+        {
+            return this.View("UnderConstruction");
+        }
         public IActionResult Privacy()
         {
 
@@ -47,7 +64,7 @@ namespace StarsFighters.Controllers
             return View("TestView", viewModel);
         }
 
-
+    
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

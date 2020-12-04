@@ -33,7 +33,7 @@ namespace StarsFighters.Services.Models.Account
 
         //}
 
-        public void CreateInitialAccountStatus(Resource resource)
+        public void CreateInitialAccountResources(Resource resource)
         {
             var resourcesOnCreation = new Resource
             {
@@ -48,6 +48,24 @@ namespace StarsFighters.Services.Models.Account
             this.dbContext.SaveChanges();
         }
 
+        public void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        //public void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes)
+        //{
+        //    var creatAccountStatus = new InitialAccountStatus 
+        //    {
+        //        level = 1,
+        //        xp = 0,
+        //        shipTypes = new Ship { ShipType = (int)ShipTypes.BattleCruiser }
+        //    };
+
+        //    this.dbContext.Accounts.Add(creatAccountStatus);
+        //    this.dbContext.SaveChanges();
+        //}
+
         public void CreateInitialBuildingsStatus(BuildingTypes buildingTypes, int buildingCurrentLevel, decimal buildingCurrentIncome)
         {
             throw new System.NotImplementedException();
@@ -55,20 +73,30 @@ namespace StarsFighters.Services.Models.Account
 
         public void ResourcesOnInitialCreate(string username, string email)
         {
-
-            var resrouncesOnInitialCreate = new Resource
-            {
-
-                Minerals = 1000,
-                Metal = 1000,
-                Gas = 650,
-                Gold = 100,
-                StarsCredits = 0,
-
-            };
-
-            this.dbContext.Resources.Add(resrouncesOnInitialCreate);
-            this.dbContext.SaveChanges();
+            throw new System.NotImplementedException();
         }
+
+        decimal IAccountService.CreateInitialAccountResources(Resource resource)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        //public void ResourcesOnInitialCreate(string username, string email)
+        //{
+
+        //    var resrouncesOnInitialCreate = new Resource
+        //    {
+
+        //        Minerals = 1000,
+        //        Metal = 1000,
+        //        Gas = 650,
+        //        Gold = 100,
+        //        StarsCredits = 0,
+
+        //    };
+
+        //    this.dbContext.Resources.Add(resrouncesOnInitialCreate);
+        //    this.dbContext.SaveChanges();
+        //}
     }
 }
