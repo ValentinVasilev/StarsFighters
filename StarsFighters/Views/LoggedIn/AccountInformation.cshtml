@@ -1,0 +1,10 @@
+﻿@model StarsFighters.Controllers.Models.Account.AccountInformationViewModel
+@{
+    ViewData["Title"] = "Home";
+    Layout = "_LoggedLayout";
+}
+
+<h3>Account Information.</h3>
+<p>Account current level: @Model.Level</p>
+<p>Account Current Xp: @Model.Experiance</p>
+<p>Account has Ship: @Model.ShipType</p>

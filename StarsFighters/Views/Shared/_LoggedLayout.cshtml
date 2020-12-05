@@ -20,14 +20,14 @@
                         @*<a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">Sign out</a>*@
                         <a class="nav-link text-dark" asp-area="Identity" asp-controller="Account" asp-action="Logout"><i class="fa fa-fw fa-user"></i> Logout</a>
                         @*<form method="post" asp-area="Identity" asp-controller="Account" aspcontroller="Logout">
-                    <input type="submit" value="Logout" />
-                </form>*@
+                <input type="submit" value="Logout" />
+            </form>*@
 
                     }
 
                     <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
                     <a href="#"><i class="fa fa-fw fa-trophy"></i> Achievements</a>
-                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                    <a class="nav-link text-dark" asp-area="" asp-controller="LoggedIn" asp-action="ContactForm"><i class="fa fa-fw fa-envelope"></i> Contact</a>
 
                 </div>
                 <div class="progress md-progress" style="height: 20px">
@@ -37,7 +37,7 @@
 
         <div class="sidenav">
             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Home"><i class="fa fa-globe" aria-hidden="true"></i> Home</a>
-            <a href="#services">Services</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="LoggedIn" asp-action="AccountInformation"/>AccountInfo</a>
             <a href="#clients">Clients</a>
             <a href="#contact">Contact</a>
             <button class="dropdown-btn">Buildings<i class="fa fa-caret-down"></i></button>

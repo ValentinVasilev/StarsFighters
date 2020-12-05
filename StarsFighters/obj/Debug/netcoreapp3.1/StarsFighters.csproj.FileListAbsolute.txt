@@ -205,3 +205,5 @@ D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFi
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Buildings\Gas Station.jpg
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Buildings\Crystal Station.jpg
 D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\bin\Debug\netcoreapp3.1\wwwroot\OtherFiles\Pictures\Buildings\Metal Station.jpg
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\LoggedIn\AccountInformation.cshtml.g.cs
+D:\Важни\1.WEB DEVELOPMENT\0.Stars Fighters - Project\StarsFighters\StarsFighters\obj\Debug\netcoreapp3.1\Razor\Views\LoggedIn\ContactForm.cshtml.g.cs
