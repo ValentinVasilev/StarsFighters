@@ -140,7 +140,7 @@ namespace StarsFighters.Areas.Identity.Pages.Account
             var accountResourcesOnCreations = new Resource
             {
                 //Id = (int)userId,
-               
+               //TODO: View Model
                 Metal = 5000,
                 Minerals = 4000,
                 Gas = 3000,

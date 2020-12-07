@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace StarsFighters.Data.Models
 {
+
     public class ContactForm
     {
         public int Id { get; set; }
