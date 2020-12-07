@@ -10,26 +10,19 @@
     <link rel="stylesheet" href="/css/ContactForm.css">
 </head>
 <body>
-
-    <h3>Contact Form</h3>
-
     <div class="container">
         <form action="/action_page.php">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="emailAddress" placeholder="Your Email..">
 
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="account">Account</label>
+            <input type="text" id="account" name="accountName" placeholder="Your Account..">
 
-            <label for="country">Country</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-            </select>
+            <label for="about">About</label>
+            <input type="text" id="about" name="aboutWhat" placeholder="About..">
 
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:300px"></textarea>
 
             <input type="submit" value="Submit">
         </form>
