@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace StarsFighters.Controllers.Models.ContactForm
+namespace StarsFighters.Web.ViewModels.ContactForm
 {
     public class ContactFormViewModel
     {

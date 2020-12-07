@@ -1,6 +1,6 @@
 using System;
 
-namespace StarsFighters.Controllers.Models
+namespace StarsFighters.Web.ViewModels
 {
     public class ErrorViewModel
     {

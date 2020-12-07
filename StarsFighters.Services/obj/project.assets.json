@@ -1547,6 +1547,9 @@
       "StarsFighters.Web.ViewModels/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "StarsFighters.Data": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/StarsFighters.Web.ViewModels.dll": {}
         },

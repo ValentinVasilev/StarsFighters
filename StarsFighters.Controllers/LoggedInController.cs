@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using StarsFighters.Controllers.Models.Account;
+using StarsFighters.Web.ViewModels.Account;
 using StarsFighters.Data;
 using System;
 using System.Collections.Generic;

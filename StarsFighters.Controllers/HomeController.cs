@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.Logging;
 using StarsFighters.Controllers.Models;
 using StarsFighters.Data;
-
+using StarsFighters.Web.ViewModels;
 namespace StarsFighters.Controllers
 {
 

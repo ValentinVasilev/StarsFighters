@@ -1,6 +1,6 @@
 ﻿namespace StarsFighters.Controllers.Models
 {
-    using StarsFighters.Data.Models;
+    using StarsFighters.Web.ViewModels;
     public class LoggedInViewModel
     {
 

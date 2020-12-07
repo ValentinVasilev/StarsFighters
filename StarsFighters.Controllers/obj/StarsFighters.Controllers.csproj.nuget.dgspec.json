@@ -227,7 +227,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Важни\\1.WEB DEVELOPMENT\\0.Stars Fighters - Project\\StarsFighters\\StarsFighters.Data\\StarsFighters.Data.csproj": {
+                "projectPath": "D:\\Важни\\1.WEB DEVELOPMENT\\0.Stars Fighters - Project\\StarsFighters\\StarsFighters.Data\\StarsFighters.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

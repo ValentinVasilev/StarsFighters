@@ -1,4 +1,4 @@
-﻿namespace StarsFighters.Controllers.Models.Account
+﻿namespace StarsFighters.Web.ViewModels.Account
 {
     public class AccountInformationViewModel
     {

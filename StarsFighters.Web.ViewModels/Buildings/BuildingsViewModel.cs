@@ -1,4 +1,4 @@
-﻿namespace StarsFighters.Controllers.Models.Buildings
+﻿namespace StarsFighters.Web.ViewModels.Buildings
 {
     public class BuildingsViewModel
     {

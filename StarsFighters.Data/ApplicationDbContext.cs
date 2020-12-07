@@ -67,7 +67,11 @@ namespace StarsFighters.Data
                     ua.AccountId
                 });
 
+            //builder.Entity<Building>().HasData(new Building {Id = 1, BuildingName = 1, UpgradeTimeFormula = "b*l + 3" }); 
+            //builder.Entity<Building>().HasData(new Building {Id = 2, BuildingName = 2, UpgradeTimeFormula = "b*l + 2" }); 
+            //builder.Entity<Building>().HasData(new Building {Id = 3, BuildingName = 3, UpgradeTimeFormula = "b*l + 1" });
 
+           
         }
     }
 }
