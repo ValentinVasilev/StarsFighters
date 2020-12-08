@@ -67,10 +67,7 @@
     <ProjectReference Include="..\StarsFighters.Controllers\StarsFighters.Controllers.csproj" />
     <ProjectReference Include="..\StarsFighters.Data\StarsFighters.Data.csproj" />
     <ProjectReference Include="..\StarsFighters.Services\StarsFighters.Services.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Ship\" />
+    <ProjectReference Include="..\StarsFighters.Web.ViewModels\StarsFighters.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

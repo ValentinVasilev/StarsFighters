@@ -30,12 +30,7 @@ namespace StarsFighters.Controllers
         }
         public IActionResult Achievements()
         {
-            return View();
-        }
-
-        public IActionResult ShipDeck()
-        {
-            return View();
+            return this.View();
         }
 
         public IActionResult ContactForm()

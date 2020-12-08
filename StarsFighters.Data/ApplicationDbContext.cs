@@ -21,8 +21,6 @@ namespace StarsFighters.Data
 
         public DbSet<User> User { get; set; }
 
-        public DbSet<UsersAccounts> UsersAccounts { get; set; }
-
         public DbSet<ContactForm> ContactForms { get; set; }
 
         public DbSet<Achievement> Achievements { get; set; }
@@ -60,18 +58,11 @@ namespace StarsFighters.Data
         {
             base.OnModelCreating(builder);
 
-            builder.Entity<UsersAccounts>()
-                .HasKey(ua => new
-                {
-                    ua.UserId,
-                    ua.AccountId
-                });
-
             //builder.Entity<Building>().HasData(new Building {Id = 1, BuildingName = 1, UpgradeTimeFormula = "b*l + 3" }); 
             //builder.Entity<Building>().HasData(new Building {Id = 2, BuildingName = 2, UpgradeTimeFormula = "b*l + 2" }); 
             //builder.Entity<Building>().HasData(new Building {Id = 3, BuildingName = 3, UpgradeTimeFormula = "b*l + 1" });
 
-           
+
         }
     }
 }

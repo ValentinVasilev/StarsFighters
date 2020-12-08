@@ -14,5 +14,14 @@ namespace StarsFighters.Controllers
         }
 
 
+        public IActionResult ShipUpgrades()
+        {
+            return this.View();
+        }
+
+        public IActionResult ShipResearch()
+        {
+            return this.View();
+        }
     }
 }

@@ -20,24 +20,21 @@
                         @*<a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">Sign out</a>*@
                         <a class="nav-link text-dark" asp-area="Identity" asp-controller="Account" asp-action="Logout"><i class="fa fa-fw fa-user"></i> Logout</a>
                         @*<form method="post" asp-area="Identity" asp-controller="Account" aspcontroller="Logout">
-                <input type="submit" value="Logout" />
-            </form>*@
+                                <input type="submit" value="Logout" />
+                            </form>*@
 
                     }
-
+                    @*<a class="nav-link text-dark" asp-area="" asp-controller="LoggedIn" asp-action="ContactForm"><i class="fa fa fa-sign-out-alt"></i> Logout</a>*@
                     <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
                     <a href="#"><i class="fa fa-fw fa-trophy"></i> Achievements</a>
                     <a class="nav-link text-dark" asp-area="" asp-controller="LoggedIn" asp-action="ContactForm"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+                </div>
 
-                </div>
-                <div class="progress md-progress" style="height: 20px">
-                    <div class="progress-bar" role="progressbar" style="width: 25%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                </div>
-</header>
+        </header>
 
         <div class="sidenav">
             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Home"><i class="fa fa-globe" aria-hidden="true"></i> Home</a>
-            <a class="nav-link text-dark" asp-area="" asp-controller="LoggedIn" asp-action="AccountInformation"/>AccountInfo</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="LoggedIn" asp-action="AccountInformation" />AccountInfo</a>
             <a href="#clients">Clients</a>
             <a href="#contact">Contact</a>
             <button class="dropdown-btn">Buildings<i class="fa fa-caret-down"></i></button>
@@ -48,9 +45,9 @@
             </div>
             <button class="dropdown-btn">Ship<i class="fa fa-caret-down"></i></button>
             <div class="dropdown-container">
-                <a href="#">Upgrades</a>
-                <a href="#">Items</a>
-                <a href="#">Research</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Ship" asp-action="ShipDeck">Ship Deck</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Ship" asp-action="ShipUpgrades">Upgrades</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Ship" asp-action="ShipResearch">Research</a>
             </div>
             <a href="#contact">Search</a>
         </div>
@@ -78,7 +75,7 @@
                 <span>
                     <img src="/OtherFiles/Pictures/Resources/Darkmatter.png" width="50" height="50" style="position:fixed;left:1290px;bottom:785px;z-index:999">
                 </span>
-             
+
             </div>
 
             <hr color="#33D7FF">
@@ -86,10 +83,8 @@
                 @RenderBody()
             </div>
         </main>
-
-
-        <footer class="footer">
-        </footer>
+        @*<footer class="footer">
+            </footer>*@
     </div>
 
 </body>

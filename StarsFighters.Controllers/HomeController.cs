@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using StarsFighters.Controllers.Models;
 using StarsFighters.Data;
 using StarsFighters.Web.ViewModels;
+
 namespace StarsFighters.Controllers
 {
 
@@ -16,6 +17,7 @@ namespace StarsFighters.Controllers
         private readonly ApplicationDbContext db;
         private readonly IActionContextAccessor _accessor;
         public IActionContextAccessor Accessor { get; }
+
 
         public HomeController(ILogger<HomeController> logger,
             ApplicationDbContext db,
@@ -32,16 +34,23 @@ namespace StarsFighters.Controllers
         {
             //var userIpAddress = _accessor.ActionContext.HttpContext.Connection.RemoteIpAddress.ToString();
             //TODO : Save current user Ip to Db
-            if (!User.Identity.IsAuthenticated)
+            //if (!User.Identity.IsAuthenticated)
+            //{
+            //    return this.Redirect("/Home/Index");
+            //}
+            //return RedirectToAction("Home");
+
+            if (User.Identity.IsAuthenticated)
             {
                 return this.Redirect("/Home/Home");
             }
-            return View();
+
+            return this.View();
         }
 
         public IActionResult Home()
         {
-            return View("Home");
+            return View();
         }
 
         public IActionResult UnderConstruction()
@@ -64,7 +73,7 @@ namespace StarsFighters.Controllers
             return View("TestView", viewModel);
         }
 
-    
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -1082,6 +1082,9 @@
         }
       },
       "StarsFighters.Web.ViewModels/1.0.0": {
+        "dependencies": {
+          "StarsFighters.Data": "1.0.0"
+        },
         "runtime": {
           "StarsFighters.Web.ViewModels.dll": {}
         }

@@ -6,7 +6,7 @@ namespace StarsFighters.Controllers
     {
         public IActionResult Quest()
         {
-            return View("Quest");
+            return this.View("Quest");
         }
     }
 }
