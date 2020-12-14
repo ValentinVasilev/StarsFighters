@@ -18,6 +18,7 @@ using Microsoft.Extensions.Logging;
 using StarsFighters.Data;
 using StarsFighters.Data.Models;
 using StarsFighters.Services.Models.Account;
+using StarsFighters.Web.ViewModels.Account;
 
 namespace StarsFighters.Areas.Identity.Pages.Account
 {
@@ -95,7 +96,9 @@ namespace StarsFighters.Areas.Identity.Pages.Account
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                    ResourcesOnAccountCreation();
+                    //accountCreationOnUserSignin();
+                    //ResourcesOnAccountCreation();
+                    accountOnCreation();
 
                     _logger.LogInformation("User created a new account with password.");
 
@@ -134,21 +137,75 @@ namespace StarsFighters.Areas.Identity.Pages.Account
 
         private void ResourcesOnAccountCreation()
         {
+
+            //var accountId =
+
+            var onAccountCreation = new Resource
+            {
+
+                Metal = 2000,
+                Minerals = 1000,
+                Gas = 500,
+                Gold = 100,
+                StarsCredits = 0,
+            };
+            //var accountResourcesOnCreations = new Resource
+            //{
+            //    //Id = (int)userId,
+            //   //TODO: View Model
+            //    Metal = 5000,
+            //    Minerals = 4000,
+            //    Gas = 3000,
+            //    Gold = 100,
+            //    StarsCredits = 0
+            //};
+
+
+            this.dbContext.Resources.Add(onAccountCreation);
+            this.dbContext.SaveChanges();
+        }
+
+        private void accountCreationOnUserSignin()
+        {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             //var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var accountResourcesOnCreations = new Resource
+            var accountOnCreation = new StarsFighters.Data.Models.Account
             {
-                //Id = (int)userId,
-               //TODO: View Model
-                Metal = 5000,
-                Minerals = 4000,
-                Gas = 3000,
-                Gold = 100,
-                StarsCredits = 0
+                AspUserId = userId,
+                Level = 1,
+                Experience = 0,
+                ShipType = new Ship
+                {
+                    ShipType = 1,
+                    ShipStatistics = new Statistic
+                    {
+                        HealthPoints = 1000,
+                        Damage = 2000,
+                        Shield = 3000,
+                        Speed = 2000,
+                        HullDamageReduce = 10
+                    }
+
+                },
+               
             };
 
-            this.dbContext.Resources.Add(accountResourcesOnCreations);
+            this.dbContext.Accounts.Add(accountOnCreation);
+        }
+
+        public void accountOnCreation()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var newAccount = new StarsFighters.Data.Models.Account
+            {
+                AspUserId = userId,
+                Experience = 0,
+                Level = 1,
+            };
+
+            this.dbContext.Accounts.Add(newAccount);
             this.dbContext.SaveChanges();
         }
     }

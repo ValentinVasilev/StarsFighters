@@ -5,6 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using StarsFighters.Web.ViewModels.ContactForm;
+using System.Security.Claims;
+using StarsFighters.Data.Models;
 
 namespace StarsFighters.Controllers
 {
@@ -21,7 +24,7 @@ namespace StarsFighters.Controllers
             var account = new AccountInformationViewModel
             {
                 Level = 1,
-                Experiance = 100,
+                Experience = 100,
                 ShipType = 3
 
             };
@@ -36,6 +39,34 @@ namespace StarsFighters.Controllers
         public IActionResult ContactForm()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult ContactForm(ContactFormViewModel input)
+        {
+            ClaimsPrincipal currentUser = this.User;
+
+            var currentUserID = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            if (!this.ModelState.IsValid)
+            {
+                return this.View();
+            }
+
+            var contact = new ContactForm
+            {
+                UserId = currentUserID,
+                Email = input.Email,
+                Account = input.Account,
+                About = input.About,
+                Subject = input.Subject,
+                SubmitedOn = DateTime.UtcNow
+            };
+
+            this.applicationDbContext.ContactForms.Add(contact);
+            this.applicationDbContext.SaveChanges();
+
+            return Redirect("/Home/Home");
+            //TODO: Redirect to LoggedIn Home Page
         }
     }
 }

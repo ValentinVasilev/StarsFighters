@@ -4,8 +4,10 @@
     {
         public int Level { get; set; }
 
-        public int Experiance { get; set; }
+        public int Experience { get; set; }
 
         public int ShipType { get; set; }
+
+        public string AspUserId { get; set; }
     }
 }

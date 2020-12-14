@@ -46,6 +46,9 @@
     <Content Update="wwwroot\OtherFiles\Pictures\Buildings\Metal Station.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="wwwroot\OtherFiles\Pictures\LoggedInHome\Forum.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="wwwroot\OtherFiles\Pictures\Resources\Crystals2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -68,6 +71,10 @@
     <ProjectReference Include="..\StarsFighters.Data\StarsFighters.Data.csproj" />
     <ProjectReference Include="..\StarsFighters.Services\StarsFighters.Services.csproj" />
     <ProjectReference Include="..\StarsFighters.Web.ViewModels\StarsFighters.Web.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
