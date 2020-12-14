@@ -21,15 +21,22 @@ namespace StarsFighters.Controllers
         }
         public IActionResult AccountInformation()
         {
-            var account = new AccountInformationViewModel
+            //var accountInfo = new AccountResourcesInformationViewModel
+            //{
+            //  Metal = 1000,
+            //  Minerals = 500,
+            //  Gas = 250,
+            //  Gold = 100,
+            //  StarsCredits = 0
+            //};
+
+            var accountInfo = new AccountInformationViewModel
             {
                 Level = 1,
                 Experience = 100,
-                ShipType = 3
-
             };
 
-            return View(account);
+            return View(accountInfo);
         }
         public IActionResult Achievements()
         {

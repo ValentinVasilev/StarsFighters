@@ -96,9 +96,9 @@ namespace StarsFighters.Areas.Identity.Pages.Account
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                    //accountCreationOnUserSignin();
+                    accountCreationOnUserSignin();
                     //ResourcesOnAccountCreation();
-                    accountOnCreation();
+                    //accountOnCreation();
 
                     _logger.LogInformation("User created a new account with password.");
 
@@ -167,45 +167,34 @@ namespace StarsFighters.Areas.Identity.Pages.Account
 
         private void accountCreationOnUserSignin()
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            //var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            ClaimsPrincipal currentUser = this.User;
 
-            var accountOnCreation = new StarsFighters.Data.Models.Account
+            var currentUserID = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            var account = new AccountInformationViewModel
             {
-                AspUserId = userId,
-                Level = 1,
+                AspUserId = currentUserID,
                 Experience = 0,
-                ShipType = new Ship
-                {
-                    ShipType = 1,
-                    ShipStatistics = new Statistic
-                    {
-                        HealthPoints = 1000,
-                        Damage = 2000,
-                        Shield = 3000,
-                        Speed = 2000,
-                        HullDamageReduce = 10
-                    }
-
-                },
-               
+                Level = 1,
             };
 
-            this.dbContext.Accounts.Add(accountOnCreation);
+            //var accountOnCreation = accountService.
+            //this.dbContext.Accounts.Add(account);
+            //this.dbContext.SaveChanges();
         }
 
         public void accountOnCreation()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var newAccount = new StarsFighters.Data.Models.Account
+            var newAccount = new AccountInformationViewModel
             {
                 AspUserId = userId,
                 Experience = 0,
                 Level = 1,
             };
 
-            this.dbContext.Accounts.Add(newAccount);
+            //this.dbContext.Accounts.Add(newAccount);
             this.dbContext.SaveChanges();
         }
     }

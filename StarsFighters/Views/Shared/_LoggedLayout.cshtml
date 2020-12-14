@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model StarsFighters.Web.ViewModels.Account.AccountResourcesInformationViewModel
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -55,23 +56,23 @@
         <main class="main">
             <h1></h1>
             <div class="main-header">
-                <div class="main-header__heading">Metal</div>
+                <div class="main-header__heading">Metal:@*@Model.Metal*@</div>
                 <span>
                     <img src="/OtherFiles/Pictures/Resources/MetalBar.png" width="50" height="50" style="position:fixed;left:265px;bottom:785px;z-index:999">
                 </span>
-                <div class="main-header__heading">Crystals</div>
+                <div class="main-header__heading">Crystals:@*@Model.Minerals*@</div>
                 <span>
                     <img src="/OtherFiles/Pictures/Resources/Crystals2.png" width="50" height="50" style="position:fixed;left:530px;bottom:785px;z-index:999">
                 </span>
-                <div class="main-header__updates">Gas</div>
+                <div class="main-header__updates">Gas:@*@Model.Gas*@*</div>
                 <span>
                     <img src="/OtherFiles//Pictures//Resources/Gas.png" width="50" height="50" style="position:fixed;left:800px;bottom:785px;z-index:999">
                 </span>
-                <div class="main-header__updates">Gold</div>
+                <div class="main-header__updates">Gold:@*@Model.Gold*@*</div>
                 <span>
                     <img src="/OtherFiles/Pictures/Resources/Gold.png" width="50" height="50" style="position:fixed;left:1050px;bottom:785px;z-index:999">
                 </span>
-                <div class="main-header__updates">DarkMatter</div>
+                <div class="main-header__updates">DarkMatter:@*@Model.StarsCredits*@*</div>
                 <span>
                     <img src="/OtherFiles/Pictures/Resources/Darkmatter.png" width="50" height="50" style="position:fixed;left:1290px;bottom:785px;z-index:999">
                 </span>

@@ -1,6 +1,7 @@
 ﻿using InfraStructure.Data.Enums;
 using StarsFighters.Data;
 using StarsFighters.Data.Models;
+using StarsFighters.Web.ViewModels.Account;
 
 namespace StarsFighters.Services.Models.Account
 {
@@ -12,6 +13,23 @@ namespace StarsFighters.Services.Models.Account
         {
             this.dbContext = dbContext;
         }
+
+        public decimal CreateInitialAccountResources(AccountResourcesInformationViewModel viewModel)
+        {
+            var accountResources = new Resource
+            {
+                Metal = 5000,
+                Minerals = 4000,
+                Gas = 3000,
+                Gold = 1000,
+                StarsCredits = 500,
+            };
+
+            this.dbContext.Resources.Add(accountResources);
+            return this.dbContext.SaveChanges();
+
+        }
+
         //public void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes)
         //{
         //    var shipInitialCreate = new Ship
@@ -33,20 +51,6 @@ namespace StarsFighters.Services.Models.Account
 
         //}
 
-        public void CreateInitialAccountResources(Resource resource)
-        {
-            var resourcesOnCreation = new Resource
-            {
-                Metal = 2000,
-                Minerals = 1500,
-                Gas = 1000,
-                Gold = 200,
-                StarsCredits = 0
-            };
-
-            this.dbContext.Resources.Add(resourcesOnCreation);
-            this.dbContext.SaveChanges();
-        }
 
         public void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes)
         {
@@ -76,11 +80,7 @@ namespace StarsFighters.Services.Models.Account
             throw new System.NotImplementedException();
         }
 
-        decimal IAccountService.CreateInitialAccountResources(Resource resource)
-        {
-            throw new System.NotImplementedException();
-        }
-
+     
         //public void ResourcesOnInitialCreate(string username, string email)
         //{
 

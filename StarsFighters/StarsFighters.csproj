@@ -70,6 +70,7 @@
     <ProjectReference Include="..\StarsFighters.Controllers\StarsFighters.Controllers.csproj" />
     <ProjectReference Include="..\StarsFighters.Data\StarsFighters.Data.csproj" />
     <ProjectReference Include="..\StarsFighters.Services\StarsFighters.Services.csproj" />
+    <ProjectReference Include="..\StarsFighters.Test\StarsFighters.Test.csproj" />
     <ProjectReference Include="..\StarsFighters.Web.ViewModels\StarsFighters.Web.ViewModels.csproj" />
   </ItemGroup>
 

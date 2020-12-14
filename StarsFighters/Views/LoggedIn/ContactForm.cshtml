@@ -13,51 +13,7 @@
     @*<link rel="stylesheet" href="/css/bootstrap.min.css">*@
 </head>
 <body>
-    @*<div class="container">
-            <form method="post">
-                <label asp-for="Email">Email</label>
-                <input asp-for="Email" id="email" name="emailAddress" placeholder="Your Email..">
-                <span asp-validation-for="Email" class="text-danger"></span>
 
-                <label asp-for="Account">Account</label>
-                <input asp-for="Account" id="account" name="accountName" placeholder="Your Account..">
-                <span asp-validation-for="Account" class="text-danger"></span>
-
-                <label asp-for="About">About</label>
-                <input asp-for="About" id="about" name="aboutWhat" placeholder="About..">
-                <span asp-validation-for="About" class="text-danger"></span>
-
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:300px"></textarea>
-
-                <input type="submit" class="btn btn-outline-primary">
-            </form>
-        </div>*@
-
-    @*<form method="post">
-            <div asp-validation-summary="All" class=" text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Account"></label>
-                <input asp-for="Account" class="form-control" />
-                <span asp-validation-for="Account" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="About"></label>
-                <input asp-for="About" class="form-control" />
-                <span asp-validation-for="About" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Subject"></label>
-                <textarea asp-for="Subject" class="form-control" />
-                <span asp-validation-for="About" class="text-danger"></span>
-            </div>
-
-            <input type="submit" class="btn btn-primary">
-        </form>*@
     <div class="container">
         <form id="contact" action="" method="post">
             <div asp-validation-summary="All"></div>
@@ -75,19 +31,16 @@
                 <input asp-for="About" class="form-control" placeholder="What is about" type="text" tabindex="3" required>
                 <span asp-validation-for="About"></span>
             </div>
-            @*<fieldset>
-                <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-            </fieldset>*@
-        <fieldset>
-            <textarea asp-for="Subject" class="form-control" placeholder="Type your Message Here...." tabindex="5" required></textarea>
-            <span asp-validation-for="Subject"></span>
-        </fieldset>
+            <fieldset>
+                <textarea asp-for="Subject" class="form-control" placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                <span asp-validation-for="Subject"></span>
+            </fieldset>
             <fieldset>
                 <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
                 @*<input  type="submit" class="btn btn-primary"/>*@
             </fieldset>
         </form>
-        <p>Feel free to contact for anythink.</p> 
+        <p>Feel free to contact for anythink.</p>
 
     </div>
 </body>

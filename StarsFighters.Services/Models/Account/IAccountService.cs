@@ -1,5 +1,6 @@
 ﻿using InfraStructure.Data.Enums;
 using StarsFighters.Data.Models;
+using StarsFighters.Web.ViewModels.Account;
 
 namespace StarsFighters.Services.Models.Account
 {
@@ -7,7 +8,7 @@ namespace StarsFighters.Services.Models.Account
     {
         void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes);
 
-        decimal CreateInitialAccountResources(Resource resource);
+        decimal CreateInitialAccountResources(AccountResourcesInformationViewModel viewModel);
 
         void CreateInitialBuildingsStatus(BuildingTypes buildingTypes, int buildingCurrentLevel, decimal buildingCurrentIncome);
 

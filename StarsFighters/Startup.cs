@@ -17,6 +17,7 @@ using InfraStructure.Data.Enums;
 using StarsFighters.Services.Models;
 using System.IO;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
+using StarsFighters.Services.Models.Account;
 
 namespace StarsFighters
 {
@@ -54,6 +55,8 @@ namespace StarsFighters
             services.AddControllersWithViews();
             services.AddRazorPages();
 
+            //Applicaton Services
+            services.AddTransient<IAccountService, AccountService>();
 
         }
 

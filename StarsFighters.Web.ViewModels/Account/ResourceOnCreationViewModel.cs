@@ -7,14 +7,14 @@ namespace StarsFighters.Web.ViewModels.Account
 {
     public class ResourceOnCreationViewModel
     {
-        public decimal? Minerals { get; set; }
+        public decimal Minerals { get; set; }
 
-        public decimal? Metal { get; set; }
+        public decimal Metal { get; set; }
 
-        public decimal? Gas { get; set; }
+        public decimal Gas { get; set; }
 
-        public decimal? Gold { get; set; }
+        public decimal Gold { get; set; }
 
-        public decimal? StarsCredits { get; set; }
+        public decimal StarsCredits { get; set; }
     }
 }
