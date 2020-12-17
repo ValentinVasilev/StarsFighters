@@ -17,5 +17,7 @@ namespace StarsFighters.Data.Models
         public string Description { get; set; }
 
         public DateTime EarnedOn { get; set; }
+
+        public bool Completed { get; set; }
     }
 }

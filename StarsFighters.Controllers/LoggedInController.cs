@@ -19,29 +19,23 @@ namespace StarsFighters.Controllers
         {
             this.applicationDbContext = applicationDbContext;
         }
+
         public IActionResult AccountInformation()
         {
-            //var accountInfo = new AccountResourcesInformationViewModel
-            //{
-            //  Metal = 1000,
-            //  Minerals = 500,
-            //  Gas = 250,
-            //  Gold = 100,
-            //  StarsCredits = 0
-            //};
-
             var accountInfo = new AccountInformationViewModel
             {
+                Email = "Someting@abv.bg",
+                Experience = 1,
                 Level = 1,
-                Experience = 100,
+                UserName = "Valio",
             };
 
-            return View(accountInfo);
+            return View();
         }
-        public IActionResult Achievements()
-        {
-            return this.View();
-        }
+        //public IActionResult Achievements()
+        //{
+        //    return this.View();
+        //}
 
         public IActionResult ContactForm()
         {
@@ -75,5 +69,6 @@ namespace StarsFighters.Controllers
             return Redirect("/Home/Home");
             //TODO: Redirect to LoggedIn Home Page
         }
+
     }
 }

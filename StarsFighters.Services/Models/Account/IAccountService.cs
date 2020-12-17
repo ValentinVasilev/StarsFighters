@@ -6,13 +6,13 @@ namespace StarsFighters.Services.Models.Account
 {
     public interface IAccountService
     {
-        void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes);
+        void CreateInitialAccountStatus(AccountInformationViewModel informationViewModel);
 
         decimal CreateInitialAccountResources(AccountResourcesInformationViewModel viewModel);
 
         void CreateInitialBuildingsStatus(BuildingTypes buildingTypes, int buildingCurrentLevel, decimal buildingCurrentIncome);
 
-        void ResourcesOnInitialCreate(string username, string email);
+        //void ResourcesOnInitialCreate(string username, string email);
 
 
         //TODO FutureItem List

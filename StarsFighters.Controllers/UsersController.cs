@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using StarsFighters.Services.Models.Account;
 using StarsFighters.Services.Models;
+using StarsFighters.Web.ViewModels.Account;
+using System.Security.Claims;
 
 namespace StarsFighters.Controllers
 {
@@ -22,6 +24,23 @@ namespace StarsFighters.Controllers
             this.db = db;
         }
 
+        //public IActionResult Register(AccountInformationViewModel model)
+        //{
+        //    ClaimsPrincipal currentUser = this.User;
+
+        //    var currentUseId = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+        //    if (ModelState.IsValid)
+        //    {
+        //        var accountOnSignIn = new AccountInformationViewModel();
+        //        accountOnSignIn.AspUserId = currentUseId;
+        //        accountOnSignIn.Experience = 0;
+        //        accountOnSignIn.Level = 1;
+        //        accountOnSignIn.ShipType = 0;
+        //    }
+
+        //    return RedirectToAction("/Home/Home");
+        //}
         //public async Task<IActionResult> Register()
         //{
         //    if (this.userService.GetUserId())

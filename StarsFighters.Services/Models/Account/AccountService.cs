@@ -52,51 +52,15 @@ namespace StarsFighters.Services.Models.Account
         //}
 
 
-        public void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes)
+        public void CreateInitialAccountStatus(AccountInformationViewModel informationViewModel)
         {
             throw new System.NotImplementedException();
         }
-
-        //public void CreateInitialAccountStatus(int level, decimal xp, ShipTypes shipTypes)
-        //{
-        //    var creatAccountStatus = new InitialAccountStatus 
-        //    {
-        //        level = 1,
-        //        xp = 0,
-        //        shipTypes = new Ship { ShipType = (int)ShipTypes.BattleCruiser }
-        //    };
-
-        //    this.dbContext.Accounts.Add(creatAccountStatus);
-        //    this.dbContext.SaveChanges();
-        //}
 
         public void CreateInitialBuildingsStatus(BuildingTypes buildingTypes, int buildingCurrentLevel, decimal buildingCurrentIncome)
         {
             throw new System.NotImplementedException();
         }
 
-        public void ResourcesOnInitialCreate(string username, string email)
-        {
-            throw new System.NotImplementedException();
-        }
-
-     
-        //public void ResourcesOnInitialCreate(string username, string email)
-        //{
-
-        //    var resrouncesOnInitialCreate = new Resource
-        //    {
-
-        //        Minerals = 1000,
-        //        Metal = 1000,
-        //        Gas = 650,
-        //        Gold = 100,
-        //        StarsCredits = 0,
-
-        //    };
-
-        //    this.dbContext.Resources.Add(resrouncesOnInitialCreate);
-        //    this.dbContext.SaveChanges();
-        //}
     }
 }

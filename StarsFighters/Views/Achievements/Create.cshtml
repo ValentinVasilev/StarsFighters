@@ -1,0 +1,29 @@
+﻿@model StarsFighters.Web.ViewModels.Achievements.CreateAchievementViewModel
+
+@{
+    ViewData["Title"] = "Create Achievement";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create new Achievement</h1>
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description"></span>
+    </div>
+    <div class="form-group form-check">
+        <label class="form-check-label">
+            <input class="form-check-input" asp-for="Completed" /> @Html.DisplayNameFor(model => model.Completed)
+        </label>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>

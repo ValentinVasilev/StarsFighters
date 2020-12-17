@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
 using StarsFighters.Web.ViewModels.Achievements;
 
 namespace StarsFighters.Services.Models.Account
 {
     public interface IAchievementService
     {
-        void CreateAchievement(AchievementCreateModel achievementCreateModel);
-        void GetAllAchievements(string accountId, string username);
+        void CreateAchievement(CreateAchievementViewModel achievementCreateModel);
+
+        void GetAllCompleted();
     }
 }

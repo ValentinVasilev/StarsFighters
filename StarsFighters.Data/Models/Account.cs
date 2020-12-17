@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace StarsFighters.Data.Models
 {
-    public class Account : IdentityDbContext
+    public class Account : IdentityUser
     {
         public Account()
         {
@@ -15,16 +16,6 @@ namespace StarsFighters.Data.Models
             this.ItemsType = new HashSet<Item>();
             this.Quests = new HashSet<Quest>();
         }
-
-        public int Id { get; set; }
-
-        public string AspUserId { get; set; }
-
-        //public string UserId { get; set; }
-        //public ApplicationUser User
-        //[Required]        //public string UserId { get; set; }
-        //public ApplicationUser User
-        //[Required]
         public int Level { get; set; }
 
         [Required]

@@ -57,6 +57,7 @@ namespace StarsFighters
 
             //Applicaton Services
             services.AddTransient<IAccountService, AccountService>();
+            services.AddTransient<IAchievementService, AchievementService>();
 
         }
 

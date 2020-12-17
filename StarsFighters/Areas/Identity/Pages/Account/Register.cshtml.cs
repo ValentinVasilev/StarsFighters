@@ -91,13 +91,13 @@ namespace StarsFighters.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
+                ResourcesOnAccountCreation();
 
                 var user = new IdentityUser { UserName = Input.Username, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
-                    accountCreationOnUserSignin();
-                    //ResourcesOnAccountCreation();
+                    //accountCreationOnUserSignin();
                     //accountOnCreation();
 
                     _logger.LogInformation("User created a new account with password.");
@@ -109,6 +109,7 @@ namespace StarsFighters.Areas.Identity.Pages.Account
                         pageHandler: null,
                         values: new { area = "Identity", userId = user.Id, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
+
 
                     await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
@@ -124,6 +125,7 @@ namespace StarsFighters.Areas.Identity.Pages.Account
                     }
 
 
+
                 }
                 foreach (var error in result.Errors)
                 {
@@ -137,65 +139,57 @@ namespace StarsFighters.Areas.Identity.Pages.Account
 
         private void ResourcesOnAccountCreation()
         {
-
-            //var accountId =
+            
 
             var onAccountCreation = new Resource
             {
-
                 Metal = 2000,
                 Minerals = 1000,
                 Gas = 500,
                 Gold = 100,
                 StarsCredits = 0,
             };
-            //var accountResourcesOnCreations = new Resource
-            //{
-            //    //Id = (int)userId,
-            //   //TODO: View Model
-            //    Metal = 5000,
-            //    Minerals = 4000,
-            //    Gas = 3000,
-            //    Gold = 100,
-            //    StarsCredits = 0
-            //};
 
 
             this.dbContext.Resources.Add(onAccountCreation);
             this.dbContext.SaveChanges();
         }
 
-        private void accountCreationOnUserSignin()
-        {
-            ClaimsPrincipal currentUser = this.User;
+        //private void accountCreationOnUserSignin(AccountInformationViewModel account)
+        //{
+        //    account.Experience = 0;
+        //    account.Level = 1;
 
-            var currentUserID = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
+        //    ClaimsPrincipal currentUser = this.User;
 
-            var account = new AccountInformationViewModel
-            {
-                AspUserId = currentUserID,
-                Experience = 0,
-                Level = 1,
-            };
+        //    var currentUserID = currentUser.FindFirst(ClaimTypes.NameIdentifier).Value;
 
-            //var accountOnCreation = accountService.
-            //this.dbContext.Accounts.Add(account);
-            //this.dbContext.SaveChanges();
-        }
+        //    var accountCreationOnSignIn = new AccountInformationViewModel
+        //    {
+        //        AspUserId = currentUserID,
+        //        Experience = account.Experience,
+        //        Level = account.Level,
+        //    };
+
+        //    this.applicationDbContext.Accounts.Add(accountCreationOnSignIn);
+        //    this.applicationDbContext.SaveChanges();
+
+        //    return Redirect("/Home/Home");
+        //}
 
         public void accountOnCreation()
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var newAccount = new AccountInformationViewModel
-            {
-                AspUserId = userId,
-                Experience = 0,
-                Level = 1,
-            };
+            //var newAccount = new Account
+            //{
+            //    AspUserId = userId,
+            //    Experience = 0,
+            //    Level = 1,
+            //};
 
             //this.dbContext.Accounts.Add(newAccount);
-            this.dbContext.SaveChanges();
+            //this.dbContext.SaveChanges();
         }
     }
 }
