@@ -18,7 +18,7 @@ namespace StarsFighters.Web.ViewModels.Achievements
 
         public DateTime EarnedOn => DateTime.UtcNow;
 
-        public string EarnedOnParsed => EarnedOn.ToString("d");
+        //public string EarnedOnParsed => EarnedOn.ToString("d");
 
         public bool Completed { get; set; }
     }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace StarsFighters.Data.Models
@@ -11,14 +12,15 @@ namespace StarsFighters.Data.Models
         [MaxLength(20)]
         public int BuildingName { get; set; }
 
-        
-        public string UpgradeTimeFormula { get; set; }
+        public int CurrentLevel { get; set; }
 
-        [ForeignKey("BuildingBuild")]
-        public int BuildingBuildsId { get; set; }
+        public bool UpgradeOnGoing { get; set; }
 
-        public BuildingBuild BuildingBuild { get; set; }
+        public TimeSpan UpgradeEndTime { get; set; }
 
-        public int BuildingRequiredId { get; set; }
+        public string ResourceName { get; set; }
+
+        public decimal ResourceAmountPerMinute { get; set; }
+  
     }
 }

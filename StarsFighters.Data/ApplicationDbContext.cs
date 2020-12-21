@@ -37,12 +37,6 @@ namespace StarsFighters.Data
 
         public DbSet<Building> Buildings { get; set; }
 
-        public DbSet<BuildingBuild> BuildingBuilds { get; set; }
-
-        public DbSet<BuildingFormula> BuildingFormulas { get; set; }
-
-        public DbSet<BuildingRequired> BuildingRequireds { get; set; }
-
         public DbSet<Reward> Rewards { get; set; }
 
         public DbSet<Quest> Quests { get; set; }

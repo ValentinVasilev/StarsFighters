@@ -15,6 +15,7 @@ namespace StarsFighters.Data.Models
             this.Achievements = new HashSet<Achievement>();
             this.ItemsType = new HashSet<Item>();
             this.Quests = new HashSet<Quest>();
+            this.Buildings = new HashSet<Building>();
         }
         public int Level { get; set; }
 
@@ -29,15 +30,14 @@ namespace StarsFighters.Data.Models
         [Required]
         public Ship ShipType { get; set; }
 
-        public BuildingBuild Buildings { get; set; }
-
+      
         public ICollection<Resource> Resources { get; set; }
+
+        public ICollection<Building> Buildings { get; set; }
 
         public ICollection<Achievement> Achievements { get; set; }
 
         public ICollection<Item> ItemsType { get; set; }
-
-        public ICollection<BuildingBuild> BuildingsType { get; set; }
 
         public ICollection<Quest> Quests { get; set; }
     }

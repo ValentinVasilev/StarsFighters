@@ -1,4 +1,8 @@
 ﻿@model StarsFighters.Web.ViewModels.Account.AccountResourcesInformationViewModel
+@*@using 
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager*@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,13 +24,15 @@
                     {
                         @*<a class="nav-link text-dark" asp-area="MicrosoftIdentity" asp-controller="Account" asp-action="SignOut">Sign out</a>*@
                         <a class="nav-link text-dark" asp-area="Identity" asp-controller="/Pages/Account" asp-action="Logout"><i class="fa fa-fw fa-user"></i> Logout</a>
+                        @*<a class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button type="submit" class="nav-link btn btn-link text-dark">Logout</button>*@
                         @*<form method="post" asp-area="Identity" asp-controller="Account" aspcontroller="Logout">
                                 <input type="submit" value="Logout" />
                             </form>*@
 
                     }
                     @*<a class="nav-link text-dark" asp-area="" asp-controller="LoggedIn" asp-action="ContactForm"><i class="fa fa fa-sign-out-alt"></i> Logout</a>*@
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Manage"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+                    <a class="nav-link text-dark" asp-area="Identity" asp-controller="Account" asp-action="Manage"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
                     <a class="nav-link text-dark" asp-area="" asp-controller="LoggedIn" asp-action="Achievements"><i class="fa fa-fw fa-trophy"></i> Achievements</a>
                     <a class="nav-link text-dark" asp-area="" asp-controller="LoggedIn" asp-action="ContactForm"><i class="fa fa-fw fa-envelope"></i> Contact</a>
                     <a class="nav-link text-dark" asp-area="" asp-controller="Achievements" asp-action="Create"><i class="fa fa-fw fa-envelope"></i> Create Achievement</a>
@@ -112,6 +118,6 @@
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 @*<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>*@
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>*@
 
 @RenderSection("Scripts", required: false)
