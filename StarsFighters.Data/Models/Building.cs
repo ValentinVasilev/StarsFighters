@@ -10,7 +10,7 @@ namespace StarsFighters.Data.Models
 
         [Required]
         [MaxLength(20)]
-        public int BuildingName { get; set; }
+        public string BuildingName { get; set; }
 
         public int CurrentLevel { get; set; }
 

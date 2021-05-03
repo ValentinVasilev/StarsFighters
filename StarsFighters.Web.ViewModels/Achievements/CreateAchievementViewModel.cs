@@ -13,6 +13,9 @@ namespace StarsFighters.Web.ViewModels.Achievements
         public string Name { get; set; }
 
         [Required]
+        public string UserId { get; set; }
+
+        [Required]
         [MaxLength(150)]
         public string Description { get; set; }
 

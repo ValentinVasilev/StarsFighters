@@ -4,6 +4,7 @@ using StarsFighters.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 
 namespace StarsFighters.Services.Models.Account
 {
@@ -18,6 +19,7 @@ namespace StarsFighters.Services.Models.Account
 
         public void CreateAchievement(CreateAchievementViewModel achievementCreateModel)
         {
+
             var achievement = new Achievement()
             {
                 Id = achievementCreateModel.Id,
@@ -25,7 +27,7 @@ namespace StarsFighters.Services.Models.Account
                 Description = achievementCreateModel.Description,
                 EarnedOn = DateTime.UtcNow,
                 Completed = false
-                
+
             };
 
             this.dbContext.Achievements.Add(achievement);
@@ -36,9 +38,9 @@ namespace StarsFighters.Services.Models.Account
         public void GetAllCompleted()
         {
             var completedAchievements = this.dbContext.Achievements.All(x => x.Completed == true);
-            
+
         }
 
-        
+
     }
 }

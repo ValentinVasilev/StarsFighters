@@ -44,8 +44,8 @@ namespace StarsFighters.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.;Database=StarsFighters;Integrated Security=true");
-
+            optionsBuilder.UseSqlServer("Server=.;Database=StarsFighters;Trusted_Connection=True;");
+            
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

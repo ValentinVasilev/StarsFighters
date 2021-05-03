@@ -8,5 +8,7 @@ namespace StarsFighters.Controllers
         {
             return this.View("Quest");
         }
+
+
     }
 }

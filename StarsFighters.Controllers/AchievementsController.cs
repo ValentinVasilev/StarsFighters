@@ -19,16 +19,11 @@ namespace StarsFighters.Controllers
             this.achievementService = achievementService;
         }
 
-        //public IActionResult Achievements()
-        //{
-        //    return View();
-        //}
-
         public IActionResult Create()
         {
-            var viewModel = new CreateAchievementViewModel();
-            viewModel.Completed = this.dbContext.Achievements.All(x => x.Completed == true);
-            return this.View(viewModel);
+            //var viewModel = new CreateAchievementViewModel();
+            //viewModel.Completed = this.dbContext.Achievements.All(x => x.Completed == true);
+            return this.View();
         }
 
         [HttpPost]
