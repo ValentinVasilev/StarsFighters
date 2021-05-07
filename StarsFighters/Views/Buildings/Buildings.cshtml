@@ -3,20 +3,21 @@
     Layout = "_LoggedLayout";
 }
 <div class="main-cards">
+    
     <div class="card">
         <h2>Metal Station</h2>
         <img src="/OtherFiles/Pictures/Buildings/Metal Station.jpg">
-        <p>
-            Metal Station Current Level: 5
+        <p id="upgradeLevel">
+            Metal Station Current Level: 1
         </p>
-        <p>
-            Metal Station Next Level: 6
+        <p id="nextLevel">
+            Metal Station Next Level: 2
         </p>
-        <p>
-            &emsp; Metal Station 8 hours income: 12323434256
+        <p id="income">
+            &emsp; Metal Station 8 hours income: 150
         </p>
-        <button type="button" class="btn btn-secondary">Upgrade</button>
-        <button type="button" class="btn-secondary">Upgrade</button>
+        <button type="button" id ="btnUpgrade" class="btn btn-success">Upgrade</button>
+        
     </div>
     <div class="card">
         <h2>Crystal Station</h2>
@@ -45,3 +46,22 @@
         </p>
     </div>
 </div>
+<script>
+    let btnId = document.getElementById('btnUpgrade');
+    let pElement = document.getElementById('upgradeLevel');
+    let pNextLevel = document.getElementById('nextLevel');
+    let pIncome = document.getElementById('buildingNexTlevel');
+
+    let buildingLevel = 1;
+    let buildingNexTlevel = buildingLevel + 1;
+    let startIncome = 150;
+    let incomeCalc = startIncome * buildingLevel;
+
+    btnId.addEventListener('click', () => {
+        pElement.innerHTML = `Metal Station Current Level: ${buildingLevel++}`;
+        pNextLevel.innerHTML = `Metal Station Next Level: ${buildingNexTlevel++}`;
+        pIncome.innerHTML = `&emsp; Metal Station 8 hours income: ${incomeCalc}`;
+
+        btnId.innerHTML = 'Cancel';
+    });
+</script>
